@@ -1,0 +1,22 @@
+{
+  "name": "mes-applet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LkingH/mes-applet.git"
+  },
+  "author": "ljh&xzh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LkingH/mes-applet/issues"
+  },
+  "homepage": "https://github.com/LkingH/mes-applet#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.5.3"
+  }
+}

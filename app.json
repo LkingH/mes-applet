@@ -1,14 +1,53 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/apply/apply",
+    "pages/workOrder/workOrder"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home_selected.png",
+        "text": "首页",
+        "selectedColor": "#13227a"
+      },
+      {
+        "pagePath": "pages/apply/apply",
+        "iconPath": "/icons/apply.png",
+        "selectedIconPath": "/icons/apply_selected.png",
+        "text": "申请试用",
+        "selectedColor": "#13227a"
+      },
+      {
+        "pagePath": "pages/workOrder/workOrder",
+        "iconPath": "/icons/work_order.png",
+        "selectedIconPath": "/icons/work_order_selected.png",
+        "text": "售后工单",
+        "selectedColor": "#13227a"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
 }

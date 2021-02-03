@@ -10,4 +10,5 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <van-button type="primary">主要按钮</van-button>
 </view>
