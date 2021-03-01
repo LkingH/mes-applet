@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "售后工单",
+  "usingComponents": {
+    "Banner": "/components/Banner/Banner"
+  }
 }

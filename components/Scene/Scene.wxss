@@ -1,0 +1,15 @@
+
+/* 场景（15个图标）样式 */
+.scene {
+  text-align: center;
+  margin-top:20%;
+  padding: 0 2%;
+  /* border: 1px solid red; */
+}
+.scene .scene-item {
+  width: 100%;
+  height: 100%;
+}
+.scene .line {
+  width:90%;
+}

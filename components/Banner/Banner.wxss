@@ -1,0 +1,11 @@
+/* 轮播图样式 */
+.banner {
+  width: 100%;
+  height: 260rpx;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.banner swiper {
+  height: 100%;
+  width: 100%;
+}

@@ -1,2 +1,118 @@
-<!--pages/workOrder/workOrder.wxml-->
-<text>pages/workOrder/workOrder.wxml</text>
+<!-- <HdView/> -->
+<Banner/>
+
+<!-- 售后工单 -->
+<view class="workorder container">
+  <view class="desc">
+    <text style="font-size:19px;font-weight:bold">售后工单</text>
+  </view>
+
+  <!-- 表单 -->
+  <form bindsubmit="submitWorkOrderInfo">
+    <van-cell-group>
+    <van-field
+      name="lesseeCode"
+      label="租户代码"
+      placeholder="请输入租户代码"
+      bind:input="lesseeCodeInput"
+    /> 
+    <van-field
+      name="company"
+      label="工厂名称"
+      placeholder="请输入工厂名称"
+    />
+    
+    <van-field
+      name="adminAccount"
+      label="管理员账号"
+      placeholder="请输入管理员账号"
+      bind:input="adminAccountInput"
+    />
+
+    <van-field
+      name="adminPassword"
+      label="管理员密码"
+      placeholder="请输入管理员密码"
+      bind:input="adminPasswordInput">
+      <van-button bindtap="check" slot="button" size="small" type="info"
+        >验证</van-button
+      >
+      </van-field>
+
+    <van-field
+      name="workOrderName"
+      label="工单名称"
+      placeholder="请输入工单名称"
+    />
+
+    <van-field
+      name="workOrderContent"
+      type="textarea"
+      autosize
+      label="工单内容"
+      placeholder="请输入工单内容"
+    />
+
+    <!-- 图片或视频上传 -->
+    <!-- 隐藏域提交 -->
+    <picker-view style="display:none" name="url" value="{{ urlList }}" readonly />
+    <van-cell title="图片或视频" custom-style="width:75%">
+      <van-uploader
+      file-list="{{ fileList }}"
+      accept="media"
+      bind:after-read="afterRead"
+      bind:delete="delete"
+      bind:click-preview="clickPreview"
+      />
+    </van-cell>
+
+    <van-field
+      name="email"
+      label="反馈邮箱"
+      placeholder="请输入邮箱"
+    />
+    <van-cell title="反馈到管理员">
+      <van-radio-group name="feedbackStatus" direction="horizontal" value="{{ feedbackStatus }}" bind:change="onChange">
+        <van-radio name='1' >是</van-radio>
+        <van-radio name='0' >否</van-radio>
+		  </van-radio-group>
+    </van-cell>
+  </van-cell-group>
+  <view style="display:flex;justify-content:space-around;margin:5% auto">
+    <van-button bind:click="showPopup" plain type="info">查看历史工单</van-button>
+    <van-button style="width:50%" block="true" type="info" form-type="submit">提交工单</van-button>
+  </view>
+
+  </form>
+
+  <van-popup show="{{ show }}" bind:close="onClose" 
+  custom-style="height: 250px;width: 80%;padding:8% 0 8% 0;">
+    <form bindsubmit="submitCheckInfo">
+      <van-cell-group>
+        <van-field
+          name="lesseeCode"
+          label="租户代码"
+          placeholder="请输入租户代码"
+        />
+        <van-field
+      name="adminAccount"
+      label="管理员账号"
+      placeholder="请输入管理员账号"
+    />
+
+    <van-field
+      name="adminPassword"
+      label="管理员密码"
+      placeholder="请输入管理员密码">
+    </van-field>
+    </van-cell-group>
+    <view style="display:flex;justify-content:space-around;margin:5% auto">
+      <van-button style="width:40%" block="true" bindtap="onClose" plain type="info">取消</van-button>
+      <van-button style="width:40%" block="true" type="info" form-type="submit">登录</van-button>
+    </view>
+    </form>
+  </van-popup>
+
+</view>
+
+<Cooperation/>

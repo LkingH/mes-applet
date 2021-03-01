@@ -1,0 +1,18 @@
+<view class="scene">
+  <h1>云端全场景覆盖</h1>
+  <image class="line" mode="widthFix" src="/images/line.png"></image>
+  <van-grid column-num="3">
+    <!-- <scroll-view scroll-y="true" style="height:500rpx;"> -->
+      <van-grid-item use-slot wx:for="{{ 15 }}"  wx:key="index">
+        <view class="scene-item">
+
+            <image style="width:90rpx;height:90rpx"
+       src="/images/mes.png"></image>  
+
+       <view style="font-size:13px">MES</view>
+       <view style="font-size:9px">为企业提供制造全过程的信息化，支持企业智能制造。让人、机、料、法、环的管理精细化，帮助企业管理持续化生产改进。</view>
+        </view>
+    </van-grid-item>
+    <!-- </scroll-view> -->
+  </van-grid>
+</view>

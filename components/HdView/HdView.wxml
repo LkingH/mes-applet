@@ -1,0 +1,7 @@
+<view class="header">
+  <view class="container hdCon">
+    <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+      <image mode="heightFix" src="/images/icon-zh-cn.png"></image>
+    </navigator>
+  </view>
+</view>

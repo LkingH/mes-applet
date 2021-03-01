@@ -2,38 +2,52 @@
   "pages": [
     "pages/index/index",
     "pages/apply/apply",
-    "pages/workOrder/workOrder"
+    "pages/workOrder/workOrder",
+    "pages/document/document",
+    "pages/console/console",
+    "pages/workOrderHistory/workOrderHistory",
+    "pages/bannerSkip/bannerSkip"
   ],
   "tabBar": {
+    "selectedColor": "#0E90FF",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "/icons/home.png",
-        "selectedIconPath": "/icons/home_selected.png",
-        "text": "首页",
-        "selectedColor": "#13227a"
+        "iconPath": "/icons/latest_activity.png",
+        "selectedIconPath": "/icons/latest_activity_selected.png",
+        "text": "最新活动"
       },
       {
         "pagePath": "pages/apply/apply",
         "iconPath": "/icons/apply.png",
         "selectedIconPath": "/icons/apply_selected.png",
-        "text": "申请试用",
-        "selectedColor": "#13227a"
+        "text": "申请试用"
       },
       {
         "pagePath": "pages/workOrder/workOrder",
         "iconPath": "/icons/work_order.png",
         "selectedIconPath": "/icons/work_order_selected.png",
-        "text": "售后工单",
-        "selectedColor": "#13227a"
+        "text": "售后工单"
+      },
+      {
+        "pagePath": "pages/document/document",
+        "iconPath": "/icons/document.png",
+        "selectedIconPath": "/icons/document_selected.png",
+        "text": "使用文档"
+      },
+      {
+        "pagePath": "pages/console/console",
+        "iconPath": "/icons/console.png",
+        "selectedIconPath": "/icons/console_selected.png",
+        "text": "控制台"
       }
     ]
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#070D41",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
@@ -48,6 +62,18 @@
     "van-card": "@vant/weapp/card/index",
     "van-transition": "@vant/weapp/transition/index",
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "HdView": "/components/HdView/HdView",
+    "Cooperation": "/components/Cooperation/Cooperation",
+    "van-field": "@vant/weapp/field/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-image": "@vant/weapp/image/index"
   }
 }

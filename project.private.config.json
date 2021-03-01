@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/apply/apply",
+          "pathName": "pages/apply/apply",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/workOrder/workOrder",
+          "pathName": "pages/workOrder/workOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/document/document",
+          "pathName": "pages/document/document",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/workOrderHistory/workOrderHistory",
+          "pathName": "pages/workOrderHistory/workOrderHistory",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

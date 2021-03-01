@@ -1,0 +1,16 @@
+<view style="padding: 5% 2%" class="advantage">
+   <view style="font-size:18px;margin-bottom:10rpx">盘石PaaS平台功能优势：</view> 
+    <van-grid column-num="3" border="{{ false }}">
+  <van-grid-item use-slot wx:for="{{ advantageInfo }}" wx:key="index">
+    <view class="advantage-item">
+      <view style="margin-bottom:2%;display:flex; align-items: center">
+        <image mode="widthFix" style="width:40rpx" src="{{ item.icon }}"></image> 
+        <text style="font-size:12px">{{ item.title }}</text> 
+      </view>
+      <view style="font-size:9px;">
+        {{ item.content }}
+      </view>
+    </view>
+  </van-grid-item>
+</van-grid>
+</view>

@@ -1,0 +1,12 @@
+<view class="cooperation">
+  <h1>CloudMES合作客户</h1>
+  <image class="line" mode="widthFix" src="/images/line.png"></image>
+  <van-grid column-num="3" border="{{ false }}">
+    <van-grid-item use-slot wx:for="{{ logoList }}" wx:key="index">
+      <image
+      mode="widthFix" style="width: 100%;"
+        src="{{ prefix + item.url }}"
+      />
+    </van-grid-item>
+</van-grid>
+</view>

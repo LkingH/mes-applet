@@ -1,0 +1,12 @@
+<view class="banner">
+  <swiper circular autoplay>
+    <swiper-item wx:for="{{ bannerList }}" wx:key="index">
+      <navigator id="{{ item.linkTo }}" bindtap="bannerSkip" open-type="reLaunch" url="/pages/baidu/baidu">
+        <van-image fit="widthFix" width="100%" src="{{ prefix + item.url }}"/>
+      </navigator>
+    </swiper-item>
+  </swiper>
+
+  <!-- 卡片 -->
+  <Card wx:if="{{ isShowCard }}"/>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/bannerSkip/bannerSkip.wxml-->
+<web-view src="{{ bannerUrl }}"></web-view>

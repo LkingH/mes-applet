@@ -1,0 +1,11 @@
+<view class="card">
+    <van-row gutter="20">
+      <van-col span="6" wx:for="{{ cardInfo }}" wx:key="index">
+        <view class="card-item">
+          <image style="width:60rpx;height:60rpx;" src="{{ item.icon }}">
+          </image>
+          <view class="desc">{{ item.desc }}</view>
+        </view>
+      </van-col>
+    </van-row>
+  </view>

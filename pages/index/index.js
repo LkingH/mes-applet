@@ -4,10 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    isShowCard:'false'
   },
   // 事件处理函数
   bindViewTap() {
@@ -16,6 +13,12 @@ Page({
     })
   },
   onLoad() {
+    console.log(this.route)
+    this.setData({
+      isShowCard:(this.route.indexOf('index') > 0)
+    })
+    app.globalData.isShowCard = true;
+    console.log(this.data.isShowCard)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,6 +45,13 @@ Page({
         }
       })
     }
+  },
+  onHide(){  
+    app.globalData.isShowCard = false;
+  },
+  onShow(){
+    app.globalData.isShowCard = true;
+    console.log(app.globalData.isShowCard)
   },
   getUserInfo(e) {
     console.log(e)

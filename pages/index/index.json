@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "最新活动",
+  "usingComponents": {
+    "Banner": "/components/Banner/Banner",
+    "Scene": "/components/Scene/Scene",
+    "Advantage": "/components/Advantage/Advantage"
+  }
 }

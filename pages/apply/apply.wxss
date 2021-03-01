@@ -1,1 +1,15 @@
 /* pages/apply/apply.wxss */
+.apply {
+  margin: 8% auto;
+}
+.apply .desc {
+  display:flex;
+  justify-content:space-between;
+  padding:5% 0;
+}
+.cooperation {
+  background: #F2F2F2;
+}
+.van-grid-item__content{
+  background: #F2F2F2 !important;
+}

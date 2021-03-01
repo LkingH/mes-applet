@@ -1,0 +1,37 @@
+<view class="workOrderHistory container">
+  <van-card wx:for="{{ historyOrderList }}" wx:for-item="historyOrder" wx:key="index">
+  <view slot="title">
+    工单名称：{{ historyOrder.workOrderName }}
+  </view>
+  <view slot="desc">
+    <view>工单内容：{{ historyOrder.workOrderContent }}</view>
+    <view>提交时间：<van-icon size="13px" name="clock-o"/> {{ historyOrder.createTime }} </view>
+    <view>当前状态：
+      <van-tag wx:if="{{ historyOrder.status == 0 }}" size="medium">未处理</van-tag>
+      <van-tag wx:elif="{{ historyOrder.status == 1 }}" type="warning" size="medium">处理中</van-tag>
+      <van-tag wx:elif="{{ historyOrder.status == 2 }}" type="success" size="medium">已处理</van-tag>
+      <van-tag wx:else size="medium">未处理</van-tag>
+    </view>
+  </view>
+  <view slot="footer">
+    <van-button disabled="{{ historyOrder.status != 2 }}" id="{{ historyOrder.resultId }}" bind:click="showPopup" data-test="{{ orderTitle }}" size="small" type="info" plain>查看回复</van-button>
+  </view>
+  
+
+</van-card>
+  
+<van-popup z-index="0" show="{{ show }}" bind:close="onClose"
+closeable
+custom-style="height: 60%;width: 90%;padding:5% 0 8% 0;">
+  <view>
+    <van-cell-group border="{{false}}">
+      <!-- <van-cell title="工单名称" value="{{ workOrderTitle }}" />
+      <van-cell title="工单内容" value="内容内容内容内内容内容内容内容容内容内容内容内容" />-->
+      <van-cell border="{{false}}" title="工单回复"/> 
+      <rich-text style="margin-left: 16px;display: block;" nodes="{{ dialogTitle + dialogContent }}"></rich-text>
+    </van-cell-group>
+  </view>
+</van-popup>
+
+</view>
+

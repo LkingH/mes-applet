@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/LkingH/mes-applet#readme",
   "dependencies": {
-    "@vant/weapp": "^1.5.3"
+    "@vant/weapp": "^1.6.7"
   }
 }

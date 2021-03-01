@@ -1,0 +1,2 @@
+<!--pages/console/console.wxml-->
+<web-view src="http://cloud.tencent.com/"></web-view>

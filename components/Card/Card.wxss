@@ -1,0 +1,21 @@
+/* 卡片样式 */
+.card {
+  width:90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2% 2%;
+  background: #F2F2F2;
+  /* border: 1px solid pink; */
+  position: absolute;
+  bottom: -30%;
+  left: 2.5%;
+  z-index: 100;
+}
+
+.card-item {
+  text-align: center;
+}
+
+.card-item .desc {
+  font-size: 11px;
+}

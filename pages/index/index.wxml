@@ -1,14 +1,22 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <van-button type="primary">主要按钮</van-button>
+<!-- 头部 -->
+<!-- <HdView/> -->
+
+<!-- 轮播图 -->
+<Banner/>
+
+<!-- 云场景全覆盖 -->
+<Scene/>
+
+<!-- 优势介绍 -->
+<view class="picGroup">
+  <image mode="widthFix" src="/images/pic.png"></image>
+  <image mode="widthFix"  src="/images/pic1.png"></image>
+  <!-- 功能优势 -->
+  <Advantage/>
+  
+  <image mode="widthFix" src="/images/pic2.png"></image>
 </view>
+
+<!-- 合作客户 -->
+<Cooperation/>

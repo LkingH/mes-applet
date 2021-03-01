@@ -1,1 +1,25 @@
-/* pages/workOrder/workOrder.wxss */
+/* pages/workorder/workorder.wxss */
+.workorder {
+  margin: 8% auto;
+}
+.workorder .desc {
+  display:flex;
+  justify-content:space-between;
+  padding:5% 0;
+}
+.cooperation {
+  background: #F2F2F2;
+}
+.van-grid-item__content{
+  background: #F2F2F2 !important;
+}
+
+.van-cell__value {
+  text-align: left !important;
+}
+
+
+.van-field__control--textarea {
+  min-height: 80px !important;
+}
+

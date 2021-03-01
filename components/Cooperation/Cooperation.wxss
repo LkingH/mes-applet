@@ -1,0 +1,9 @@
+
+/* 合作客户样式 */
+.cooperation{
+  text-align: center;
+  padding: 5% 2%;
+}
+.cooperation .line {
+  width: 90%;
+}
